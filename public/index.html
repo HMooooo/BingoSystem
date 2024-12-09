@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ビンゴ大会</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="message">
+    <h1>学園祭ビンゴ大会</h1>
+    <p id="comment">すでに出た数字が表示されます</p>
+  </div>
+  <div class="numberSpace">
+    <p>
+      <span id="1" class="before">1</span>
+      <span id="2" class="before">2</span>
+      <span id="3" class="before">3</span>
+      <span id="4" class="before">4</span>
+      <span id="5" class="before">5</span>
+    </p>
+    <p>
+      <span id="6" class="before">6</span>
+      <span id="7" class="before">7</span>
+      <span id="8" class="before">8</span>
+      <span id="9" class="before">9</span>
+      <span id="10" class="before">10</span>
+    </p>
+    <p>
+      <span id="11" class="before">11</span>
+      <span id="12" class="before">12</span>
+      <span id="13" class="before">13</span>
+      <span id="14" class="before">14</span>
+      <span id="15" class="before">15</span>
+    </p>
+    <p>
+      <span id="16" class="before">16</span>
+      <span id="17" class="before">17</span>
+      <span id="18" class="before">18</span>
+      <span id="19" class="before">19</span>
+      <span id="20" class="before">20</span>
+    </p>
+    <p>
+      <span id="21" class="before">21</span>
+      <span id="22" class="before">22</span>
+      <span id="23" class="before">23</span>
+      <span id="24" class="before">24</span>
+      <span id="25" class="before">25</span>
+    </p>
+    <p>
+      <span id="26" class="before">26</span>
+      <span id="27" class="before">27</span>
+      <span id="28" class="before">28</span>
+      <span id="29" class="before">29</span>
+      <span id="30" class="before">30</span>
+    </p>
+    <p>
+      <span id="31" class="before">31</span>
+      <span id="32" class="before">32</span>
+      <span id="33" class="before">33</span>
+      <span id="34" class="before">34</span>
+      <span id="35" class="before">35</span>
+    </p>
+    <p>
+      <span id="36" class="before">36</span>
+      <span id="37" class="before">37</span>
+      <span id="38" class="before">38</span>
+      <span id="39" class="before">39</span>
+      <span id="40" class="before">40</span>
+    </p>
+    <p>
+      <span id="41" class="before">41</span>
+      <span id="42" class="before">42</span>
+      <span id="43" class="before">43</span>
+      <span id="44" class="before">44</span>
+      <span id="45" class="before">45</span>
+    </p>
+    <p>
+      <span id="46" class="before">46</span>
+      <span id="47" class="before">47</span>
+      <span id="48" class="before">48</span>
+      <span id="49" class="before">49</span>
+      <span id="50" class="before">50</span>
+    </p>
+    <p>
+      <span id="51" class="before">51</span>
+      <span id="52" class="before">52</span>
+      <span id="53" class="before">53</span>
+      <span id="54" class="before">54</span>
+      <span id="55" class="before">55</span>
+    </p>
+    <p>
+      <span id="56" class="before">56</span>
+      <span id="57" class="before">57</span>
+      <span id="58" class="before">58</span>
+      <span id="59" class="before">59</span>
+      <span id="60" class="before">60</span>
+    </p>
+    <p>
+      <span id="61" class="before">61</span>
+      <span id="62" class="before">62</span>
+      <span id="63" class="before">63</span>
+      <span id="64" class="before">64</span>
+      <span id="65" class="before">65</span>
+    </p>
+    <p>
+      <span id="66" class="before">66</span>
+      <span id="67" class="before">67</span>
+      <span id="68" class="before">68</span>
+      <span id="69" class="before">69</span>
+      <span id="70" class="before">70</span>
+    </p>
+    <p>
+      <span id="71" class="before">71</span>
+      <span id="72" class="before">72</span>
+      <span id="73" class="before">73</span>
+      <span id="74" class="before">74</span>
+      <span id="75" class="before">75</span>
+    </p>
+  </div>
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script> -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+
+  <script src="./index.js" type="module"></script>
+</body>
+<!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBFQUceYFlwmw_fMFkvls5MUEl24o10io0",
+      authDomain: "bingosystem-70a1f.firebaseapp.com",
+      projectId: "bingosystem-70a1f",
+      storageBucket: "bingosystem-70a1f.appspot.com",
+      messagingSenderId: "243294568856",
+      appId: "1:243294568856:web:987512ef130f816def2bed",
+      measurementId: "G-GSL9GQ1FQG"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> -->
+
+</html>

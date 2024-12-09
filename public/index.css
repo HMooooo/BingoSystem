@@ -1,0 +1,71 @@
+html {
+    /* 背景画像 */
+    background-image: url(images/25495249.jpg);
+    /* 背景画像がコンテナ全体をカバーするように設定 */
+    background-size: cover;
+    /* 背景画像の繰り返しを防止 */
+    background-repeat: no-repeat;
+    /* 背景画像を中央に配置 */
+    background-position: center center;
+    /* スクロールしないように固定 */
+    background-attachment: fixed;
+    /* marginを無しにしている */
+    margin: none;
+}  
+
+h1{
+    /* 文字の色 */
+    color: black;
+    font-size: 2.5em;
+}
+
+#comment{
+    margin: none;
+    font-size: 1.3em;
+}
+
+.message{
+    /* 文字を中央揃え */
+    text-align: center;
+}
+
+.numberSpace{
+    /* 背景 */
+    background-color: #ff3a18;
+    /* 上下左右の幅 */
+    padding: 0.1%;
+    /* 角丸 */
+    border-radius: 20px; 
+}
+
+/* numberSpaceのpタグのスタイル */
+.numberSpace p{
+    /* 文字の中央揃え */
+    text-align: center;
+}
+
+/* 数字を取得していない際の処理 */
+.before {
+    color: rgb(235, 235, 235);
+}
+
+/* 数字を取得した際の処理 */
+.after {
+    color: black;
+}
+
+span {
+    /* spanタグの幅を指定する際に使用する */
+    display: inline-block;
+    /* 数字の左の幅 */
+    margin: 0.2% ;
+    /* 数字の右の幅 */
+    margin-right: 0.2%;
+    /* 数字の大きさ */
+    font-size: 2.7em;
+    /* spanタグの幅 */
+    width: 17%; 
+    border-radius: 15px;
+    /* 背景色 */
+    background-color: #FFD3B0;
+}
